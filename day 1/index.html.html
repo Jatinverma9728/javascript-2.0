@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        console.log("JATIN VERMA")
+        /* this is our first program of javascript for printing name */
+
+        // javascript is pretty simple but case sensitive language there are some example for eexplaning it.
+
+        fullname = "JATIN";
+        Fullname = "JATIn verma";
+        FULLNAME = "JATIN KUMAR";
+        $fullname = "jk";
+        _fullname = "jv";
+        // 123fullname = "123"; // not valid because when we assign variables we only use letters and $, _ are valid
+        // let var = "document";  it is also not valid because we cannot use reseved characters.  
+
+        // ----variables in javascript--------
+        // we want to declare variables befor use them
+        // there are three types of variables in javascript "let" , "var" and "const".
+
+        let name = "verma ji"; // let is best for use ek baar koi variable agr declare kr diya to dobara chane nhi hoga re-declare is not possible but update is possible.
+        // update krna matlab variable ke naam ki value ko change krna. for e.g 
+        name = "kumar shab"
+        // let name = "anshu"; iss ka name change nhi kr saakte kyu ki name phele se assign hai
+
+        // var age = 21;
+        // var age = 22;   // var ko baar baar re-declare kr sakte hai.
+
+
+        const gender = "male";
+        // const ko kabhi bhi change nhi kr sakte hai. it is basically is for contaning constan values in javascript.
+        // gender = "MALe"; it is also not valid because it only one time use name if we declare a name/ identifier we dot not able to change at all...
+
+
+        // -----------------objects---------------------------
+
+        //   objects are the collection different type of variables and also different data types. 
+        let obj = {
+            fullname: "jatin",
+            age: 19,
+            email: "jatin@gmail.com",
+            password: "jatin@gmail.com",
+            mobilenumber: 9728349291,
+            follow: false,
+        }
+        obj.name = "jatinkumarrrr" // if we want to change name we do this 
+        console.log(obj.name);
+
+        // agr hume kuch update krna jese ki age badhani hai to phele select kre ge fir usme add kre ge ya minus kre ge jo bhi krna h or use assign kre ge jis ki value change kri hai.
+        obj.age = obj.age - 1; // 1 method to access object values
+        obj["age"] = obj["age"] + 2; //second method to access object values
+        console.log(obj.age);
+
+        console.log(fullname);
+        console.log(Fullname);
+        console.log(FULLNAME);
+
+
+
+//-----------------------------practice-------------------------------------------------
+
+
+// 1. creat a product object like amazon product, im creating a laptop product listed on amazon website.
+
+let product = {
+productName: "asus tuf dash f15",
+ratings : "4.5/5",
+isSale : true,
+inStock : true,
+mrp : 60000, 
+todayPrice : 55000,
+
+}
+//  2. creat a instagram profile whith the help of objects.
+ const instagramProfile ={
+    userName: "iamjatin_vrman",
+    isFollow : true,
+    posts : 12,
+    followers : 3123,
+    following : 10, 
+    name : " jatin verma",
+    role : "coder/editor",
+    bio : " sadkfjhsjkhdkchkssdavjkcjksdbbfjkvghfdiishguihkdshdfjkvhsk nxzbvjkhsoihfoijaoo;n ishviu hoihoicohoi; hoihoi;huidsgg uigibfgwuifgi bjiwef8394y98ef abfjbbja agiuvdcli havidvjlzb f agdckbanz cnavzudcvan,z cla9"
+
+ }
+
+    </script>
+</body>
+
+</html>
